@@ -9,3 +9,9 @@
         \medskip
         ]%
 }
+
+\renewcommand{\section}{%
+    \@startsection
+    {section}{1}{0pt}{-1.5ex plus -1ex minus -.2ex}%
+    {1ex plus .2ex}{\large\scshape\headlinecolor}%
+}
