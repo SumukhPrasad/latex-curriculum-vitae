@@ -1,13 +1,40 @@
 \documentclass[12pt]{curriculum-vitae} 
 \usepackage[a4paper, total={7.3in, 9.7in}]{geometry} 
 
-\name{hello}
-\webpage{uuru}
+\name{Name Namename}
+\mailingaddr{123 High Street, Anytown, County, Postcode}
+\desc{Professional Action Figure Collector}
+\webpage{www.example.com}
+\phone{01234 567 890}
+
+
 
 \begin{document}
 	
 	\maketitle
 	
-	\section{Academics}
+	\cvsection[Education]{
+	\begin{detail}[School of Action Figure Collecting]{Jan 2000}{Jan 2003}
+		\begin{itemize}
+			\item Learnt how to organise action figures
+			\item Conducted research on action figure heights
+		\end{itemize}
+	\end{detail}
+	}
+	
+	\cvsection[Rando Research]{
+	\begin{detail}[Action Figure Heights: Are they growing smaller?]{Jan 2000}{Jan 2003}
+		Very important research article.
+	\end{detail}
+	\begin{detail}[Action Figure Heights: Are they growing taller?]{Jan 2000}{Jan 2003}
+		Another very important research article.
+	\end{detail}
+	\subsection{Journals}
+	\begin{itemize}
+		\item Journal of Action vol 333
+		\item Journal of Action vol 334
+		\item Journal of Action vol 335
+	\end{itemize}
+	}
 
 \end{document}
