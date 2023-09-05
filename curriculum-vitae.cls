@@ -27,7 +27,10 @@
 	\def\@mailingaddr{#1}%
 }
 \renewcommand{\maketitle}{%
-	\noindent{\bf\Huge\@name}\vspace{0.5cm}\\{\sc\@desc}\vspace{0.5cm}\\{\it\@mailingaddr}\\{\@phone $\vert$ \@webpage}\vspace{1cm}\\%
+	\begin{center}
+	\noindent{\bf\Huge\@name}\vspace{0.5cm}\\{\sc\@desc}\vspace{0.5cm}\\{\it\@mailingaddr}\\{\@phone $\vert$ \@webpage}\vspace{0.25cm}\\%
+	\noindent\rule{5cm}{0.4pt}\vspace{0.75cm}\\
+	\end{center}
 }
 
 \RequirePackage{calc}
