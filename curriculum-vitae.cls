@@ -33,11 +33,19 @@
 	\end{center}
 }
 
-\RequirePackage{calc}
-
-
-\newcommand{\cvsection}[2][]{\noindent\begin{minipage}[t]{4cm}\begin{flushleft}{\scshape\Large #1}\end{flushleft}\end{minipage}\hspace{0.5cm}\begin{minipage}[t]{\dimexpr\linewidth-4.5cm\relax}{#2}\end{minipage}\vspace{0.2cm}\\}
+\RequirePackage{titlesec}
+\titleformat{\section}{\scshape\Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.5em}{}
+\setcounter{secnumdepth}{-1}
+\newcommand{\cvsection}[2][]{
+	\noindent\begin{minipage}[t]{4cm}
+		\begin{flushleft}{{\scshape\Large#1}\addcontentsline{toc}{section}{#1}}\end{flushleft}
+	\end{minipage}
+	\hspace{0.5cm}\begin{minipage}[t]{\dimexpr\linewidth-4.5cm\relax}
+		{#2}
+	\end{minipage}\vspace{0.2cm}\\
+}
 
 \newenvironment{detail}[3][]{%
-    {\bfseries#1}\hfill#2 -- #3\\%
-\small}{\normalsize\noindent\\}
+    {{\bfseries#1}\addcontentsline{toc}{subsection}{#1}}\hfill#2 -- #3\\%
+\small}{\normalsize\noindent\vspace{0.5cm}\\}
