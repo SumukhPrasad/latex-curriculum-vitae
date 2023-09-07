@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{curriculum-vitae}[2023/05/17 v0.1 LaTeX class for curriculum vitae]
+\ProvidesClass{curriculum-vitae}[2023/05/17 v1.0 LaTeX class for curriculum vitae]
 
 \LoadClass[onecolumn]{article}
 \def\@name{}
