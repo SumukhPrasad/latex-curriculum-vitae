@@ -19,5 +19,5 @@ rm build-ctan-dist.sh
 cd ..
 
 mv ctan-dist curriculum-vitae
-zip -vr ctan-dist.zip ctan-dist/ -x "*.DS_Store"
+zip -vr curriculum-vitae.zip curriculum-vitae/ -x "*.DS_Store"
 mv curriculum-vitae ctan-dist
