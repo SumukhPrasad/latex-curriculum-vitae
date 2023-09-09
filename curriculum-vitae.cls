@@ -35,7 +35,7 @@
 
 \RequirePackage{titlesec}
 \titleformat{\section}{\scshape\Large}{\thesection}{1em}{}
-\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.5em}{}[\titlerule]
 \setcounter{secnumdepth}{-1}
 \newcommand{\cvsection}[2][]{
 	\noindent\begin{minipage}[t]{4cm}
@@ -48,4 +48,4 @@
 
 \newenvironment{detail}[3][]{%
     {{\bfseries#1}\addcontentsline{toc}{subsection}{#1}}\hfill#2 -- #3\\%
-\small}{\normalsize\noindent\vspace{0.5cm}\\}
+}{\noindent\vspace{0.5cm}\\}
